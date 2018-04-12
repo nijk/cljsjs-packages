@@ -1,6 +1,7 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]
+                  [cljsjs/prop-types "15.6.0-0"]
                   [cljsjs/react "15.6.2-0"]
                   [cljsjs/react-dom "15.6.2-0"]
                   [cljsjs/popperjs "1.14.3-0"]])
@@ -53,7 +54,7 @@
 
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-popper"
-               :requires ["cljsjs.react" "cljsjs.prop-types" "cljsjs.react.dom" "cljsjs.popperjs"])
+               :requires ["cljsjs.react" "cljsjs.react.dom" "cljsjs.prop-types" "cljsjs.popperjs"])
     (pom)
     (jar)
     (validate-checksums)))
