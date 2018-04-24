@@ -7,7 +7,7 @@
                  [cljsjs/prop-types "15.6.0-0"]])
 
 (def +lib-version+ "0.10.1")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 (def +lib-folder+ (format "react-popper-%s" +lib-version+))
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
@@ -69,4 +69,4 @@
                           "cljsjs.prop-types"])
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

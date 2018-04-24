@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'react-popper.js',
-    libraryTarget: 'umd',
+    libraryTarget: 'var',
     library: 'ReactPopper'
   },
   externals: {
